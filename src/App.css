@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+.bgdark{
+    background-color: transparent;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bg-img{
+    background-image: url(./../public/background-img.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-nav{
+    margin-left: 60px;
+    font-family: cursive;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.home{
+    margin-top: 200px;
+    text-align: center;
+    
 }
 
-.App-link {
-  color: #61dafb;
+
+a:link { text-decoration: none; }
+/* a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; } */
+
+
+.nav-link:hover{
+    border-top: 2px solid rgb(255, 166, 0);
+    border-bottom: 2px solid rgb(255, 166, 0);
+    
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.about-empty{
+    /* padding: 15px; */
+    background-color: rgb(193, 189, 189,0.5);
+    border-radius: 50px;
+    margin-top: 100px;
+    
+}
+
+.about{
+    font-size: 60px;
+    font-family: cursive;
+    text-align: center;
+    
+}
+.about-content{
+    font-size: 20px;
+    font-family: cursive;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+}
+
+.contact{
+    margin-left: 230px;
+    /* font-family: cursive; */
+}
+
+
+/* .about-btn{
+    margin-left: 700px;
+} */
+
+
+.contact-empty{
+    background-color: rgb(193, 189, 189,0.5);
+    border-radius: 50px;
+    font-family: cursive;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 90px;
+}
+
+.left{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    border-right: 2px solid rgb(70, 69, 69);
 }

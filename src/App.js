@@ -1,24 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import './../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import {BrowserRouter, Route, Routes } from "react-router-dom"
+import Topbar from './Component/Topbar';
+import Home from './Component/Home';
+import About from './Component/About';
+import Project from './Component/Project';
+import Skill from './Component/Skill';
+import Contact from './Component/Contact';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <BrowserRouter>
+    <Topbar/>
+    <Routes>
+      <Route path='/' element={<Home/>}/>
+        {/* <Route path='About' element={<About/>}/> */}
+        
+      <Route path='/About' element={<About/>}/>
+      <Route path='/Skill' element={<Skill/>}/>
+      <Route path='/Project' element={<Project/>}/>
+      <Route path='/Contact' element={<Contact/>}/>
+
+    </Routes>
+    <Toaster position="bottom-center"/>
+    </BrowserRouter>
+    </>
   );
 }
 
