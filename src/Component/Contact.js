@@ -1,11 +1,15 @@
 import React from 'react'
+import './Contact.css'
 import toast, { Toast } from 'react-hot-toast'
+import Animated from './Animated'
 function Contact() {
   const onSubmit = () => {
     toast.success("Sent Successfully ")
   }
 
   return (
+    <>
+    <Animated>
     <div className='container'>
       <div className='contact-empty'>
         <h3 className='text-center text-black-50 my-2'>Get in touch</h3>
@@ -13,7 +17,7 @@ function Contact() {
         <div className='row mt-5'>
           <div className='col-6 left'>
             <div className='m-3'>
-              <input class="form-control" type="text" placeholder="Nam  e" name='nmae' />
+              <input class="form-control" type="text" placeholder="Name" name='name' />
             </div>
             <div className='m-3'>
               <input class="form-control" type="text" placeholder="Mail" name='email' />
@@ -55,6 +59,8 @@ function Contact() {
 
 
     </div>
+    </Animated>
+    </>
   )
 }
 

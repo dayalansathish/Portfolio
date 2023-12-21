@@ -1,0 +1,17 @@
+.contact-empty{
+    background-color: rgb(193, 189, 189,0.5);
+    border-radius: 50px;
+    font-family: cursive;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 70px;
+}
+
+.left{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    border-right: 2px solid rgb(70, 69, 69);
+}

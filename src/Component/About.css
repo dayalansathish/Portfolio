@@ -1,0 +1,25 @@
+.about-empty{
+    padding: 15px;
+    background-color: rgb(193, 189, 189,0.5);
+    border-radius: 50px;
+    margin-top: 100px;
+    
+}
+
+.about{
+    font-size: 60px;
+    font-family: cursive;
+    text-align: center;
+    
+}
+.about-content{
+    font-size: 20px;
+    font-family: cursive;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+}
+
+.contact{
+   margin-left: 230px;
+    
+}

@@ -1,10 +1,13 @@
 import React from 'react'
 import { Link, Outlet } from 'react-router-dom'
 import About from './About'
+import Animated from './Animated'
+
 
 function Home() {
   return (
     <>
+    <Animated>
     <div className='container'>
       <div className='home'>
         <h1 className='text-white display-1 fw-normal fst-italic'>Sathish Kumar D</h1>
@@ -30,7 +33,7 @@ function Home() {
       </Link>
       </div>
     </div>
-    
+    </Animated>
 
       <Outlet></Outlet>
     </>
