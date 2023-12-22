@@ -1,0 +1,68 @@
+.skill-empty{
+    background-color: rgb(193, 189, 189,0.5);
+    border-radius: 50px;
+    font-family: cursive;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 70px;
+}
+
+.skill-container{
+    background-color: rgba(254, 251, 251, 0.5);
+}
+
+.anime{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.progress-bar{
+    background-color: rgb(248, 223, 190);
+    /* border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px; */
+    box-shadow: 10px;
+    height: 15px;
+    margin-top: 10px;
+    width: 100px;
+}
+
+.percentage{
+    background-color: rgb(67, 66, 66);
+    /* border: 1px solid rgb(57, 57, 57);
+    border-radius: 5px; */
+    display: block;
+    font-size: 10px;
+    font-weight: 600;
+    color: white;
+    height: 100%;
+    width: 75%;
+    padding-left: 10px;
+}
+
+.javascript{
+    width: 60%;
+}
+
+.react{
+    width: 60%;
+}
+
+.node{
+    width: 60%;}
+
+.express{
+    width: 60%;}
+
+.mongodb{
+    width: 60%;
+}
+
+.col-3 :hover{
+    transform: scale(1.1);
+    
+} 
+    

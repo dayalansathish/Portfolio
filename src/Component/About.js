@@ -1,13 +1,14 @@
 import React from 'react'
 import './About.css'
-import { Link, Outlet } from 'react-router-dom'
+import { Link, Outlet, useNavigate } from 'react-router-dom'
 import profile from './../Component/profile.jpeg'
 import { motion } from "framer-motion"
 import Animated from './Animated'
 function About() {
+  const navigate = useNavigate()
   return (
     <>
-    <Animated>
+    
     <div className='container'>
       <div className='about-empty p-0'>
         <div className='row'>
@@ -18,10 +19,16 @@ function About() {
             <h1 className='about my-3'>About</h1>
             <p className='p-3 about-content '>Hello, I am a highly motivated and skilled engineering graduate looking for an entry-level position as a software engineer. Strong in design and integration with intuitive problem-solving skills. Passionate to contribute ideas and learn new things.
              I am available for any kind of job opportunity that suits my interests</p>
-             <div>
+             <div className='d-flex justify-content-between'>
+             <div onClick={()=>navigate('/')}>
+            <i class="fa fa-arrow-circle-left fs-1 text-black p-2" aria-hidden="true"></i>
+          </div>
               <Link to={"/Contact"}>
               <button className='btn btn-outline-dark btn-lg fw-semibold  contact'>Contact Me <i class="fa fa-whatsapp p-1" aria-hidden="true"></i></button>
               </Link>
+              <div onClick={()=>navigate('/Skill')}>
+                <i class="fa fa-arrow-circle-right fs-1 text-black p-2" aria-hidden="true"></i>
+             </div>
              </div>
              <div class="d-flex justify-content-center mt-3">
             <a class="mx-3" href='https://www.instagram.com/smokey_sk/?next=%2F' target='_blank'>
@@ -35,11 +42,12 @@ function About() {
             </a>
             
           </div>
-          </div>
+          
         </div>
       </div>
     </div>
-    </Animated>
+    </div>
+    
     <Outlet></Outlet>
     </>
   )

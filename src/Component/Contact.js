@@ -9,7 +9,7 @@ function Contact() {
 
   return (
     <>
-    <Animated>
+    
     <div className='container'>
       <div className='contact-empty'>
         <h3 className='text-center text-black-50 my-2'>Get in touch</h3>
@@ -59,7 +59,7 @@ function Contact() {
 
 
     </div>
-    </Animated>
+    
     </>
   )
 }
